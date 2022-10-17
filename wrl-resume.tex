@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in LaTeX
+% Author : William R. Laroche
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape William R. Laroche} \\ \vspace{1pt}
+    \small 203-551-1146 $|$ \href{mailto:will.r.laroche@gmail.com}{\underline{will.r.laroche@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/william-r-laroche}{\underline{linkedin.com/in/william-r-laroche}} $|$
+    \href{https://github.com/wrl999}{\underline{github.com/wrl999}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Trinity College}{Hartford, CT}
+      {Bachelor of Arts in Computer Science}{Aug. 2017 -- May 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Treasurer}{Sep. 2019 -- May 2021}
+      {The Mill at Trinity College}{Hartford, CT}
+      \resumeItemListStart
+        \resumeItem{Managed financials for a 30+ person Student Organization}
+        \resumeItem{Part of a team which put on live concerts throughout the school year}
+        \resumeItem{In charge of all budgeting and purchases, including the acts, refreshments, equipment, and house needs}
+        \resumeItem{Ran multiple successful fundraising events to cover costs}
+        \resumeItem{Successfully petitioned the Student Government Association for significant additional funding to put on more events}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Volunteer}{2018 -- 2019}
+      {Little Black Dog Rescue}{Fairfield, CT}
+      \resumeItemListStart
+        \resumeItem{Fed, walked, and otherwise cared for recently rescued foster dogs, including fostering multiple dogs overnight}
+        \resumeItem{Assisted in the promotion of adoption programs to place dogs with families}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Intern}{May 2017 -- Jun. 2017}
+      {Charles Taylor PLC}{Wilton, CT}
+      \resumeItemListStart
+        \resumeItem{Assisted in the transfer of data between and into databases with Python scripting}
+        \resumeItem{Created Powerpoint Presentations for IT Team meetings}
+        \resumeItem{Provided technology support for meetings and upkeep in conference rooms}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Adaptive Agenda Assistant} \emph{JavaScript, HTML, CSS, React Native, Realm, Git}}{September 2020 -- May 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an application to flexibly manage user schedules by automatically scheduling and rescheduling events}
+            \resumeItem{Created a demonstration of the concept as a web application using JavaScript, HTML, and CSS}
+            \resumeItem{Used GitHub to manage development while working in a two person asynchronous team}
+            \resumeItem{Used React Native and Realm to port the demo to a mobile environment}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, C\#, C++, JavaScript, SQL (MySQL), HTML, CSS, CUDA} \\
+     \textbf{Frameworks}{: React Native, Node.js, Realm, WordPress} \\
+     \textbf{Developer Tools}{: Git, Vim, Xcode, VS Code, Visual Studio, PyCharm, IntelliJ} \\
+     \textbf{Libraries}{: Pandas, Numpy} \\
+     \textbf{Operating Systems}{: Windows, MacOS, Linux} \\
+     \textbf{Microsoft Office}{: Word, Excel, PowerPoint, Outlook} \\
+     \textbf{Misc}{: Stata, LaTeX, Photoshop, InDesign, Adobe Animate}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
